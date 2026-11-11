@@ -1,0 +1,18 @@
+baseURL = 'https://tengda-hit.github.io/'
+languageCode = 'zh-cn'
+title = '我的博客'
+theme = 'minimal'
+
+[params]
+  author = '酷酷的滕'
+  description = '记录思考、学习与生活。'
+
+[menus]
+  [[menus.main]]
+    name = '首页'
+    url = '/'
+    weight = 1
+  [[menus.main]]
+    name = '关于'
+    url = '/about/'
+    weight = 2

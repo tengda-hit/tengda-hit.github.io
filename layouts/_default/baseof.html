@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="{{ site.LanguageCode }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .Title }}{{ .Title }} · {{ end }}{{ site.Title }}</title>
+  <meta name="description" content="{{ .Description | default site.Params.description }}">
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+</head>
+<body>
+  <header class="site-header"><div class="container nav">
+    <a class="brand" href="{{ "" | relURL }}">{{ site.Title }}</a>
+    <nav>{{ range site.Menus.main }}<a href="{{ .URL | relURL }}">{{ .Name }}</a>{{ end }}</nav>
+  </div></header>
+  <main class="container">{{ block "main" . }}{{ end }}</main>
+  <footer class="container footer">© {{ now.Year }} {{ site.Params.author }}</footer>
+</body>
+</html>
