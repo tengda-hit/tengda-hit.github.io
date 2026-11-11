@@ -12,7 +12,7 @@ hugo server -D
 
 ## 发布到 GitHub Pages
 
-1. 把 `hugo.toml` 中的 `YOUR_USERNAME` 改成你的 GitHub 用户名。
+1. 把 `hugo.toml` 中的 `tengda-hit` 改成你的 GitHub 用户名。
 2. 创建名为 `你的用户名.github.io` 的 GitHub 仓库。
 3. 执行：
 
@@ -21,7 +21,7 @@ git init
 git add .
 git commit -m "建立 Hugo 博客"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_USERNAME.github.io.git
+git remote add origin https://github.com/tengda-hit/tengda-hit.github.io.git
 git push -u origin main
 ```
 
